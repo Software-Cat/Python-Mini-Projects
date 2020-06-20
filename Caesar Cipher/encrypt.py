@@ -14,7 +14,7 @@ def encrypt(text, s):
 
 
 # check the above function
-text = "CEASER CIPHER DEMO"
+text = "IT IS A GOOD DECRYPTING PRACTISE :)"
 s = 4
 
 print("Plain Text : " + text)

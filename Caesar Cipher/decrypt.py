@@ -1,6 +1,6 @@
-message = 'LZW OSJ AK GNWJ. 3,500 MC EWJUZSFL KZAHK OWJW KMFC, SFV 25% GX LZWAJ UJWOK OWJW CADDWV'  # encrypted message
+message = 'vyv gri kbo iye cdsvv nomynsxq drsc mszrob iye kbo tecd gkcdsxq iyeb dswo vyv hnnnn'  # encrypted message
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
+message = message.upper()
 
 def decrypt(message, LETTERS):
     for key in range(len(LETTERS)):
