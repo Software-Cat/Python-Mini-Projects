@@ -8,13 +8,13 @@ def validate_polygon(edgeList, perimeter):
     return True
 
 
-def shiftEdgeList(edgeList, shift):
+def shift_edge_list(edgeList, shift):
     newList = deque(edgeList)
     newList.rotate(shift)
     return tuple(newList)
 
 
-def reverseEdgeList(edgeList):
+def reverse_edge_list(edgeList):
     newList = []
     for edge in reversed(edgeList):
         newList.append(edge)
@@ -36,9 +36,9 @@ for a in range(1, 10):
 newHepts = []
 for hept in hepts:
     for shift in range(1, 7):
-        if shiftEdgeList(hept, shift) in newHepts:
+        if shift_edge_list(hept, shift) in newHepts:
             break
-        elif reverseEdgeList(shiftEdgeList(hept, shift)) in newHepts:
+        elif reverse_edge_list(shift_edge_list(hept, shift)) in newHepts:
             break
     else:
         newHepts.append(hept)
